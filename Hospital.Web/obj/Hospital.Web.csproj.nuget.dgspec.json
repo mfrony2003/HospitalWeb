@@ -1,0 +1,447 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Web\\Hospital.Web.csproj": {}
+  },
+  "projects": {
+    "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\Hospital.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\Hospital.Models.csproj",
+        "projectName": "Hospital.Models",
+        "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\Hospital.Models.csproj",
+        "packagesPath": "C:\\Users\\Faisal\\.nuget\\packages\\",
+        "outputPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Faisal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Repositories\\Hospital.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Repositories\\Hospital.Repositories.csproj",
+        "projectName": "Hospital.Repositories",
+        "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Repositories\\Hospital.Repositories.csproj",
+        "packagesPath": "C:\\Users\\Faisal\\.nuget\\packages\\",
+        "outputPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Faisal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\Hospital.Models.csproj": {
+                "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\Hospital.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Services\\Hospital.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Services\\Hospital.Services.csproj",
+        "projectName": "Hospital.Services",
+        "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Services\\Hospital.Services.csproj",
+        "packagesPath": "C:\\Users\\Faisal\\.nuget\\packages\\",
+        "outputPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Faisal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\Hospital.Models.csproj": {
+                "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\Hospital.Models.csproj"
+              },
+              "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Repositories\\Hospital.Repositories.csproj": {
+                "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Repositories\\Hospital.Repositories.csproj"
+              },
+              "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Utility\\Hospital.Utility.csproj": {
+                "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Utility\\Hospital.Utility.csproj"
+              },
+              "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.ViewModel\\Hospital.ViewModel.csproj": {
+                "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.ViewModel\\Hospital.ViewModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Utility\\Hospital.Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Utility\\Hospital.Utility.csproj",
+        "projectName": "Hospital.Utility",
+        "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Utility\\Hospital.Utility.csproj",
+        "packagesPath": "C:\\Users\\Faisal\\.nuget\\packages\\",
+        "outputPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Faisal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\Hospital.Models.csproj": {
+                "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\Hospital.Models.csproj"
+              },
+              "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Repositories\\Hospital.Repositories.csproj": {
+                "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Repositories\\Hospital.Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.ViewModel\\Hospital.ViewModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.ViewModel\\Hospital.ViewModel.csproj",
+        "projectName": "Hospital.ViewModel",
+        "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.ViewModel\\Hospital.ViewModel.csproj",
+        "packagesPath": "C:\\Users\\Faisal\\.nuget\\packages\\",
+        "outputPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.ViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Faisal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\Hospital.Models.csproj": {
+                "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Models\\Hospital.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Web\\Hospital.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Web\\Hospital.Web.csproj",
+        "projectName": "Hospital.Web",
+        "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Web\\Hospital.Web.csproj",
+        "packagesPath": "C:\\Users\\Faisal\\.nuget\\packages\\",
+        "outputPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Faisal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Repositories\\Hospital.Repositories.csproj": {
+                "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Repositories\\Hospital.Repositories.csproj"
+              },
+              "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Services\\Hospital.Services.csproj": {
+                "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Services\\Hospital.Services.csproj"
+              },
+              "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Utility\\Hospital.Utility.csproj": {
+                "projectPath": "D:\\HospitalManagementSystem\\Hospital.Web\\Hospital.Utility\\Hospital.Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "cloudscribe.Web.Pagination": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

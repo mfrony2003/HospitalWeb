@@ -1,0 +1,95 @@
+﻿@using Hospital.Utility
+@model PageResult<Hospital.ViewModel.ApplicationUserViewModel>
+
+@{
+    ViewData["Title"] = "Patient List";
+}
+
+<h1>Patient List</h1>
+
+<p>
+    <a asp-action="Create">Add New Doctor </a>
+</p>
+<table class="table table-hover">
+
+    <thead>
+        <tr class="table-primary">
+            <th scope="col">
+                Name
+            </th>
+            <th scope="col">
+                User Name
+            </th>
+            <th scope="col">
+                Email
+            </th>
+            <th scope="col">
+                Gender
+            </th>
+            <th scope="col">
+                Nationality
+            </th>
+            <th scope="col">
+                Address
+            </th>
+            <th scope="col">
+                DOb
+            </th>
+            <th scope="col">
+                Action
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Data)
+        {
+            <tr class="table-active">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nationality)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DOb)
+                </td>
+
+
+                @* <td>
+                    @Html.ActionLink("Edit", "Edit", new { @class = "btn btn-link" }) |
+                    @Html.ActionLink("Details", "Details", new { @class = "btn btn-link" }) |
+                    @Html.ActionLink("Delete", "Delete", new { @class = "btn btn-danger" })
+                </td> *@
+                <td class="text-nowrap">
+                <a class="btn btn-primary text-white" href="@Url.Action("Edit", "Edit", new { id = 1 })">
+                    <i class="fa fa-pencil-square-o"></i>&nbsp;Edit</a>  &nbsp;&nbsp;
+                <button value="1" class="btn btn-danger"><i class="fa fa-trash-o"></i>&nbsp;Delete</button></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<cs-pager cs-paging-pagesize=(int)Model.PageSize
+          cs-paging-pagenumber=(int)Model.PageNumber
+          cs-paging-totalitems=(int)Model.TotalItems
+          cs-pagenumber-param="pageNumber"
+          asp-controller="Hospital"
+          asp-action="Index"
+          cs-pager-li-current-class="page-item active"
+          cs-pager-li-other-class="page-item"
+          cs-pager-li-non-active-class="page-item disabled"
+          cs-pager-link-current-class="page-link"
+          cs-pager-link-other-class="page-link">
+</cs-pager>

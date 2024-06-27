@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Hospital.Repositories</id>
+    <version>1.0.0</version>
+    <authors>Hospital.Repositories</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="8.0.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\HospitalManagementSystem\Hospital.Web\Hospital.Repositories\bin\Debug\net8.0\Hospital.Repositories.dll" target="lib\net8.0\Hospital.Repositories.dll" />
+  </files>
+</package>

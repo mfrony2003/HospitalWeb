@@ -1,0 +1,52 @@
+﻿@model Hospital.ViewModel.AppointmentViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+
+        <form id="" method="post" action="Add">
+            <div class="mb-3">
+                <label for="Time" class="form-label">Time</label>
+                <input type="time" class="form-control" id="Time" asp-for="Time">
+
+            </div>
+            
+            <div class="mb-3">
+                <label for="CreatedDate" class="form-label">Created Date</label>
+                <input type="date" class="form-control" value='@DateTime.Today.ToString("yyyy-MM-dd")' id="CreatedDate" asp-for="CreatedDate">
+            </div>
+            
+            <div class="mb-3">
+                <label for="selectDoctor" class="form-label">Doctor</label>
+                <select asp-for="DoctorId" id="selectDoctor" class="form-select" 
+                asp-items="@(new SelectList(Model.AllDoctor,"Id", "Name"))">
+                <option value="" selected disabled>---Select Doctor---</option>
+            </select>
+            
+            </div>
+            <div class="mb-3">
+                <label for="selectPatient" class="form-label">Patient</label>
+                <select asp-for="PatientId" id="selectPatient" class="form-select"
+                        asp-items="@(new SelectList(Model.AllPatient,"Id", "Name"))">
+                    <option value="" selected disabled>---Select Patient---</option>
+                </select>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+    </div>
+    
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+

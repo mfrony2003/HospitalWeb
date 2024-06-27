@@ -1,0 +1,17 @@
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\bin\Debug\net8.0\Hospital.Utility.deps.json
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\bin\Debug\net8.0\Hospital.Utility.dll
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\bin\Debug\net8.0\Hospital.Utility.pdb
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\bin\Debug\net8.0\Hospital.Models.dll
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\bin\Debug\net8.0\Hospital.Repositories.dll
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\bin\Debug\net8.0\Hospital.Models.pdb
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\bin\Debug\net8.0\Hospital.Repositories.pdb
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.csproj.AssemblyReference.cache
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.AssemblyInfoInputs.cache
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.AssemblyInfo.cs
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.csproj.CoreCompileInputs.cache
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.csproj.CopyComplete
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.dll
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\refint\Hospital.Utility.dll
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.pdb
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\ref\Hospital.Utility.dll

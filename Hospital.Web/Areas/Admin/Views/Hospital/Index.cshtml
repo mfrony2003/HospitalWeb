@@ -1,0 +1,98 @@
+﻿@using Hospital.Utility
+@model PageResult<Hospital.ViewModel.HospitalInfoViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<div class="pb-3">
+    <div class="float-start"></div>
+    <div class="float-lg-end">
+        <input type="search" id="btnSearch" class="form-control " onkeyup="searchTable()" placeholder="Search">
+        
+    </div>
+    <div ></div>
+</div>
+
+<table id="tblSort" class="table table-hover">
+    <thead>
+        <tr class="table-primary">
+            <th>
+                ID
+            </th>
+            <th scope="col" class="sort" onclick="sortTable(1)">
+                Name
+            </th>
+            <th scope="col" class="sort" onclick="sortTable(2)">
+                Type
+            </th>
+            <th scope="col" class="sort" onclick="sortTable(3)">
+
+                City
+            </th>
+            <th>
+                PinCode
+            </th>
+            <th>
+                Country
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Data)
+        {
+            <tr class="table-active">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PinCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+                @* <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td> *@
+                <td class="text-nowrap">
+                    <a class="btn btn-success text-white" href="@Url.Action("Edit", "Hospital", new { id = item.Id })">
+                        <i class="fa fa-pencil-square-o"></i>&nbsp;Edit
+                    </a>  &nbsp;&nbsp;
+                    <a class="btn btn-danger  text-white" href="@Url.Action("Delete", "Hospital", new { id = item.Id })">
+                        <i class="fa fa-pencil-square-o"></i>&nbsp;Delete
+                    </a>  &nbsp;&nbsp;
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<cs-pager cs-paging-pagesize=(int)Model.PageSize
+          cs-paging-pagenumber=(int)Model.PageNumber
+          cs-paging-totalitems=(int)Model.TotalItems
+          cs-pagenumber-param="pageNumber"
+          asp-controller="Hospital"
+          asp-action="Index"
+          cs-pager-li-current-class="page-item active"
+          cs-pager-li-other-class="page-item"
+          cs-pager-li-non-active-class="page-item disabled"
+          cs-pager-link-current-class="page-link"
+          cs-pager-link-other-class="page-link">
+</cs-pager>
