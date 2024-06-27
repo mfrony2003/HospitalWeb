@@ -13,7 +13,10 @@ namespace Hospital.ViewModel
         public int Id { get; set; }
         public string Name { get; set; }
 
-
+        public LabReportCategoryViewModel()
+        {
+            
+        }
         public LabReportCategoryViewModel(LabReportCategory model)
         {
             Id = model.Id;

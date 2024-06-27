@@ -12,7 +12,10 @@ namespace Hospital.ViewModel
         public int Id { get; set; }
         public string Name { get; set; }
 
-
+        public MedecineCategoryViewModel()
+        {
+            
+        }
         public MedecineCategoryViewModel(MedecineCategory model)
         {
             Id = model.Id;

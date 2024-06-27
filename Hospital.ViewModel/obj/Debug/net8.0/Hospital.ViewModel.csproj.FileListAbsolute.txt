@@ -13,3 +13,4 @@ D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hos
 D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\refint\Hospital.ViewModel.dll
 D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hospital.ViewModel.pdb
 D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\ref\Hospital.ViewModel.dll
+D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hospital.ViewModel.sourcelink.json

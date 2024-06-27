@@ -19,3 +19,4 @@ D:\HospitalManagementSystem\Hospital.Web\Hospital.Services\obj\Debug\net8.0\Hosp
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Services\obj\Debug\net8.0\refint\Hospital.Services.dll
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Services\obj\Debug\net8.0\Hospital.Services.pdb
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Services\obj\Debug\net8.0\ref\Hospital.Services.dll
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Services\obj\Debug\net8.0\Hospital.Services.sourcelink.json

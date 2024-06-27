@@ -306,3 +306,4 @@ D:\HospitalManagementSystem\Hospital.Web\Hospital.Web\obj\Debug\net8.0\refint\Ho
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Web\obj\Debug\net8.0\Hospital.Web.pdb
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Web\obj\Debug\net8.0\Hospital.Web.genruntimeconfig.cache
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Web\obj\Debug\net8.0\ref\Hospital.Web.dll
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Web\obj\Debug\net8.0\Hospital.Web.sourcelink.json

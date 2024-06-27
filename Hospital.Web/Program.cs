@@ -20,12 +20,14 @@ builder.Services.AddIdentity<IdentityUser,IdentityRole>()
 builder.Services.AddScoped<IDbInitilizer,DbInitilizer>();
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmailSender, EmailSender>();
+
 builder.Services.AddTransient<IHospitalInfoService, HospitalInfoService>();
 builder.Services.AddTransient<IApplicationUserService, ApplicationUserService>();
 builder.Services.AddTransient<IRoomService, RoomService>();
 builder.Services.AddTransient<IMedecineService, MedecineService>();
 builder.Services.AddTransient<ILabReportService, LabReportService>();
 builder.Services.AddTransient<IPrescriptionService, PrescriptionService>();
+builder.Services.AddTransient<IAppoinmentService, AppoinmentService>();
 builder.Services.AddTransient<IAppoinmentService, AppoinmentService>();
 builder.Services.AddRazorPages();
 
