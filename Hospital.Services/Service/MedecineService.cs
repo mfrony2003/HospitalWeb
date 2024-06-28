@@ -18,10 +18,10 @@ namespace Hospital.Services.Service
         {
             _unitOfWork = unitOfWork;
         }
-        public void DeleteMedecineInfo(int id)
+        public void DeleteMedecine(int id)
         {
-            var model = _unitOfWork.GenericRepository<MedecineInfo>().GetById(id);
-            _unitOfWork.GenericRepository<MedecineInfo>().Delete(model);
+            var model = _unitOfWork.GenericRepository<Medecine>().GetById(id);
+            _unitOfWork.GenericRepository<Medecine>().Delete(model);
             _unitOfWork.Save();
         }
 
@@ -33,9 +33,9 @@ namespace Hospital.Services.Service
             try
             {
                 int ExcludeRecords = pageSize * pageNumber - pageSize;
-                var modelList = _unitOfWork.GenericRepository<MedecineInfo>().GetAll()
+                var modelList = _unitOfWork.GenericRepository<Medecine>().GetAll(includeProperties: "MedecineCategory")
                     .Skip(ExcludeRecords).Take(pageSize).ToList();
-                totalCount = _unitOfWork.GenericRepository<MedecineInfo>().GetAll().ToList().Count;
+                totalCount = _unitOfWork.GenericRepository<Medecine>().GetAll().ToList().Count;
 
                 vmList = ConvertModelToVieModelList(modelList);
             }
@@ -52,33 +52,33 @@ namespace Hospital.Services.Service
             };
             return result;
         }
-        private List<MedecineViewModel> ConvertModelToVieModelList(List<MedecineInfo> modelList)
+        private List<MedecineViewModel> ConvertModelToVieModelList(List<Medecine> modelList)
         {
             return modelList.Select(x => new MedecineViewModel(x)).ToList();
         }
 
         public MedecineViewModel GetMedecineById(int Id)
         {
-            var model = _unitOfWork.GenericRepository<MedecineInfo>().GetById(Id);
+            var model = _unitOfWork.GenericRepository<Medecine>().GetById(Id);
             var vm = new MedecineViewModel(model);
             return vm;
         }
 
-        public void InsertMedecineInfo(MedecineViewModel medecine)
+        public void InsertMedecine(MedecineViewModel medecine)
         {
             var model = new MedecineViewModel().ConvertViewModel(medecine);
-            _unitOfWork.GenericRepository<MedecineInfo>().Add(model);
+            _unitOfWork.GenericRepository<Medecine>().Add(model);
             _unitOfWork.Save();
         }
 
-        public void UpdateMedecineInfo(MedecineViewModel medecine)
+        public void UpdateMedecine(MedecineViewModel medecine)
         {
             var model = new MedecineViewModel().ConvertViewModel(medecine);
-            var modelById = _unitOfWork.GenericRepository<MedecineInfo>().GetById(model.Id);
+            var modelById = _unitOfWork.GenericRepository<Medecine>().GetById(model.Id);
             modelById.Name = medecine.Name;
             modelById.Price = medecine.Price;
             
-            _unitOfWork.GenericRepository<MedecineInfo>().Update(modelById);
+            _unitOfWork.GenericRepository<Medecine>().Update(modelById);
             _unitOfWork.Save();
 
         }

@@ -13,7 +13,7 @@
 <table class="table">
     <thead>
         <tr>
-             <th>
+            <th>
                 ID
             </th>
             <th scope="col" class="sort" onclick="sortTable(1)">
@@ -23,21 +23,27 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Data) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Data)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td class="text-nowrap">
+                    <a class="btn btn-success text-white" href="@Url.Action("Edit", "LabReportCategory", new { id = item.Id })">
+                        <i class="fa fa-pencil-square-o"></i>&nbsp;Edit
+                    </a>  &nbsp;&nbsp;
+                    <a class="btn btn-danger  text-white" href="@Url.Action("Delete", "LabReportCategory", new { id = item.Id })">
+                        <i class="fa fa-pencil-square-o"></i>&nbsp;Delete
+                    </a>  &nbsp;&nbsp;
+
+                </td>
+
+            </tr>
+        }
     </tbody>
 </table>
 <cs-pager cs-paging-pagesize=(int)Model.PageSize

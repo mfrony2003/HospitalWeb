@@ -1,5 +1,6 @@
 ﻿using Hospital.Models;
 using Hospital.Services.Interface;
+using Hospital.Services.Service;
 using Hospital.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using System.Drawing.Printing;
@@ -10,47 +11,56 @@ namespace Hospital.Web.Areas.Admin.Controllers
     public class MedecineController : Controller
     {
         IMedecineService _medecineService;
+        IMedecineCategoryService _medecineCategoryService;
 
-        public MedecineController(IMedecineService medecineService)
+        public MedecineController(IMedecineService medecineService, IMedecineCategoryService medecineCategoryService)
         {
             _medecineService = medecineService;
+            _medecineCategoryService = medecineCategoryService;
         }
-        public IActionResult MedecineList(int pageNumber = 1, int pageSize = 10)
+        public IActionResult Index(int pageNumber = 1, int pageSize = 10)
         {
             return View(_medecineService.GetAll(pageNumber, pageSize));
         }
 
         [HttpGet]
-        public IActionResult AddMedecine()
+        public IActionResult Create()
         {
-            return View();
+            MedecineViewModel viewModel = new MedecineViewModel
+            {
+                AllMedecineCategory = _medecineCategoryService.GetAll()
+            };
+            return View(viewModel);
         }
-        
-        
 
-        public IActionResult AddMedecine(MedecineViewModel vm)
+
+        [HttpPost]
+        public IActionResult Create(MedecineViewModel vm)
         {
-            _medecineService.InsertMedecineInfo(vm);
-            return RedirectToAction("MedecineList");
+            MedecineCategory medecineCategory = _medecineCategoryService.GetMedecineCategoryModelById(vm.MedecineCategoryId);
+            vm.MedecineCategory = medecineCategory;            
+
+            _medecineService.InsertMedecine(vm);
+            return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult EditMedecine(int id)
+        public IActionResult Edit(int id)
         {
             var viewModel = _medecineService.GetMedecineById(id);
             return View(viewModel);
         }
 
         [HttpPost]
-        public IActionResult EditMedecine(MedecineViewModel vm)
+        public IActionResult Edit(MedecineViewModel vm)
         {
-            _medecineService.UpdateMedecineInfo(vm);
-            return RedirectToAction("MedecineList");
+            _medecineService.UpdateMedecine(vm);
+            return RedirectToAction("Index");
         }
 
-        public IActionResult DeleteMedecine(int id)
+        public IActionResult Delete(int id)
         {
-            _medecineService.DeleteMedecineInfo(id);
-            return RedirectToAction("MedecineList");
+            _medecineService.DeleteMedecine(id);
+            return RedirectToAction("Index");
         }
 
 

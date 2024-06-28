@@ -5,12 +5,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Hospital.Web.Areas.Admin.Controllers
 {
+    [Area("admin")]
     public class LabReportCategoryController : Controller
     {
         public ILabReportCategoryService _ILabReportCategoryService;
         public LabReportCategoryController(ILabReportCategoryService ILabReportCategoryService)
         {
-            ILabReportCategoryService = _ILabReportCategoryService;
+            _ILabReportCategoryService = ILabReportCategoryService;
         }
 
         public IActionResult Index(int pageNumber = 1, int pageSize = 10)

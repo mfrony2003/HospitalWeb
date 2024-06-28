@@ -8,9 +8,9 @@ D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hos
 D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hospital.ViewModel.AssemblyInfoInputs.cache
 D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hospital.ViewModel.AssemblyInfo.cs
 D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hospital.ViewModel.csproj.CoreCompileInputs.cache
+D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hospital.ViewModel.sourcelink.json
 D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hospital.ViewModel.csproj.CopyComplete
 D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hospital.ViewModel.dll
 D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\refint\Hospital.ViewModel.dll
 D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hospital.ViewModel.pdb
 D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\ref\Hospital.ViewModel.dll
-D:\HospitalManagementSystem\Hospital.Web\Hospital.ViewModel\obj\Debug\net8.0\Hospital.ViewModel.sourcelink.json

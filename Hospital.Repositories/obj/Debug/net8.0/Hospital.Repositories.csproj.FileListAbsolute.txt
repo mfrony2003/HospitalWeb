@@ -9,6 +9,7 @@ D:\HospitalManagementSystem\Hospital.Web\Hospital.Repositories\obj\Debug\net8.0\
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Repositories\obj\Debug\net8.0\Hospital.Repositories.AssemblyInfoInputs.cache
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Repositories\obj\Debug\net8.0\Hospital.Repositories.AssemblyInfo.cs
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Repositories\obj\Debug\net8.0\Hospital.Repositories.csproj.CoreCompileInputs.cache
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Repositories\obj\Debug\net8.0\Hospital.Repositories.sourcelink.json
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Repositories\obj\Debug\net8.0\Hospital.Repositories.csproj.CopyComplete
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Repositories\obj\Debug\net8.0\Hospital.Repositories.dll
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Repositories\obj\Debug\net8.0\refint\Hospital.Repositories.dll

@@ -1,6 +1,8 @@
 ﻿using Hospital.Models;
 using Hospital.Services.Interface;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace Hospital.Web.Areas.Admin.Controllers
 {
@@ -32,5 +34,6 @@ namespace Hospital.Web.Areas.Admin.Controllers
         {
             return View("Identity/Account/Login");
         }
+        
     }
 }

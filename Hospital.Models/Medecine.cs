@@ -2,7 +2,7 @@
 
 namespace Hospital.Models
 {
-    public class MedecineInfo
+    public class Medecine
     {
         [Key]
         public int Id { get; set; }

@@ -14,11 +14,12 @@ namespace Hospital.ViewModel
         public string Name { get; set; }
         public float Price { get; set; }
 
+        public int MedecineCategoryId { get; set; }
         public MedecineCategory MedecineCategory { get; set; }
         public IEnumerable<MedecineCategory> AllMedecineCategory { get; set; }
         public MedecineViewModel() { }
 
-        public MedecineViewModel(MedecineInfo model)
+        public MedecineViewModel(Medecine model)
         {
             Id = model.Id;
             Name = model.Name;
@@ -27,9 +28,9 @@ namespace Hospital.ViewModel
 
         }
 
-        public MedecineInfo ConvertViewModel(MedecineViewModel model)
+        public Medecine ConvertViewModel(MedecineViewModel model)
         {
-            return new MedecineInfo
+            return new Medecine
             {
                 Id = model.Id,
                 Name = model.Name,                

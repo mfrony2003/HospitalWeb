@@ -21,11 +21,18 @@ namespace Hospital.Web.Areas.Admin.Controllers
         }
         public IActionResult List(int pageNumber = 1, int pageSize = 10)
         {
+            var user = _userManager.GetUserId(HttpContext.User);
+            if (user != null)
+            {
+                var loggedInUserId = new Guid((user));
+                var logginDoctor = _applicationUsertService.GetDoctorById(loggedInUserId);
 
-            var loggedInUserId = new Guid((_userManager.GetUserId(HttpContext.User)));
-            var logginDoctor= _applicationUsertService.GetDoctorById (loggedInUserId);
-
-            return View(_appointmentService.GetAppointmentBylDoctor(pageNumber, pageSize, logginDoctor));
+                return View(_appointmentService.GetAppointmentBylDoctor(pageNumber, pageSize, logginDoctor));
+            }
+            else
+            {
+                return View(_appointmentService.GetAll(pageNumber, pageSize));
+            }
         }
 
         [HttpGet]

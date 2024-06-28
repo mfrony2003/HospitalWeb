@@ -10,6 +10,7 @@ D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospi
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.AssemblyInfoInputs.cache
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.AssemblyInfo.cs
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.csproj.CoreCompileInputs.cache
+D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.sourcelink.json
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.csproj.CopyComplete
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\Hospital.Utility.dll
 D:\HospitalManagementSystem\Hospital.Web\Hospital.Utility\obj\Debug\net8.0\refint\Hospital.Utility.dll

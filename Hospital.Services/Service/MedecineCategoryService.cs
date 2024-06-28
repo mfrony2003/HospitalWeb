@@ -52,6 +52,38 @@ namespace Hospital.Services.Service
             };
             return result;
         }
+        public IEnumerable<MedecineCategory> GetAll()
+        {
+            IEnumerable<MedecineCategory> modelList;
+
+            try
+            {
+
+                modelList = _unitOfWork.GenericRepository<MedecineCategory>().GetAll();
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return modelList;
+        }
+        public MedecineCategory GetMedecineCategoryModelById(int Id)
+        {
+            MedecineCategory model;
+
+            try
+            {
+
+                model = _unitOfWork.GenericRepository<MedecineCategory>().GetById(Id);
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return model;
+        }
         private List<MedecineCategoryViewModel> ConvertModelToVieModelList(List<MedecineCategory> modelList)
         {
             return modelList.Select(x => new MedecineCategoryViewModel(x)).ToList();

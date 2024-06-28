@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Hospital.Web.Areas.Admin.Controllers
 {
+    [Area("admin")]
     public class MedecineCategoryController : Controller
     {
         public IMedecineCategoryService _IMedecineCategoryService;

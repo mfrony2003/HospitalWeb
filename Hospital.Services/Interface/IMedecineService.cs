@@ -12,8 +12,8 @@ namespace Hospital.Services.Interface
     {
         PageResult<MedecineViewModel> GetAll(int pageNumber, int pageSize);
         MedecineViewModel GetMedecineById(int Id);
-        void UpdateMedecineInfo(MedecineViewModel medecine);
-        void InsertMedecineInfo(MedecineViewModel medecine);
-        void DeleteMedecineInfo(int id);
+        void UpdateMedecine(MedecineViewModel medecine);
+        void InsertMedecine(MedecineViewModel medecine);
+        void DeleteMedecine(int id);
     }
 }

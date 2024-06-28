@@ -80,8 +80,8 @@ namespace Hospital.Services.Service
             modelById.Description  = model.Description;
             modelById.Doctor = model.Doctor;
             modelById.Patient = model.Patient;
-            modelById.LabReports= model.LabReports;
-            modelById.MedecineNames = model.MedecineNames;            
+            modelById.PrescribeMedecines= model.PrescribeMedecines;
+            modelById.PrescribeLabReports = model.PrescribeLabReports;            
 
             _unitOfWork.GenericRepository<Prescription>().Update(modelById);
             _unitOfWork.Save();

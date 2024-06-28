@@ -34,7 +34,7 @@ namespace Hospital.Services.Service
             try
             {
                 int ExcludeRecords = pageSize * pageNumber - pageSize;
-                var modelList = _unitOfWork.GenericRepository<LabReport>().GetAll()
+                var modelList = _unitOfWork.GenericRepository<LabReport>().GetAll(includeProperties: "LabReportCategory")
                     .Skip(ExcludeRecords).Take(pageSize).ToList();
                 totalCount = _unitOfWork.GenericRepository<LabReport>().GetAll().ToList().Count;
 

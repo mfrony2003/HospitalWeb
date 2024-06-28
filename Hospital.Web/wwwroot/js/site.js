@@ -83,16 +83,18 @@ function searchTable() {
 //modal popup partialview _deleteModal
 //const modalName = button.getAttribute('data-Modal')
 const deleteModal = document.getElementById('deleteModal')
-deleteModal.addEventListener('shown.bs.modal', event => {
-    const button = event.relatedTarget
-    const itemid = button.getAttribute('data-id')
-    const area = button.getAttribute('data-Area')
-    const controller = button.getAttribute('data-Controller')
-    const actionMethod = button.getAttribute('data-ActionMethod')
-    var url = '/' + area + '/' + controller + '/' + actionMethod + '/' + itemid;
 
-    deleteModal.querySelector('.ancdelete').setAttribute("href", url)
+if (deleteModal != null) {
+    deleteModal.addEventListener('shown.bs.modal', event => {
+        const button = event.relatedTarget
+        const itemid = button.getAttribute('data-id')
+        const area = button.getAttribute('data-Area')
+        const controller = button.getAttribute('data-Controller')
+        const actionMethod = button.getAttribute('data-ActionMethod')
+        var url = '/' + area + '/' + controller + '/' + actionMethod + '/' + itemid;
 
-});
+        deleteModal.querySelector('.ancdelete').setAttribute("href", url)
 
+    });
+}
 

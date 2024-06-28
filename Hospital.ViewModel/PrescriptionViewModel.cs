@@ -12,14 +12,26 @@ namespace Hospital.ViewModel
     public class PrescriptionViewModel
     {
         public int Id { get; set; }
+        public string Weight { get; set; }
+        public string Height { get; set; }
+        public string Temperature { get; set; }
+
+        public string BP { get; set; }
+
+        public string Pulse { get; set; }
+
+        public string PresentingComplain { get; set; }
+
+        public string Advices { get; set; }
+
         public string Description { get; set; }
         public ApplicationUser Doctor { get; set; }
         public ApplicationUser Patient { get; set; }
 
-        public List<MedecineInfo> MedecineNames { get; set; } = new List<MedecineInfo>();
+        public List<PrescribeMedecine> PrescribeMedecines { get; set; }
 
-        public List<LabReport> LabReports { get; set; } = new List<LabReport>();
-        
+        public List<PrescribeLabReport> PrescribeLabReports { get; set; }
+
 
         public PrescriptionViewModel() { }
 
@@ -29,8 +41,8 @@ namespace Hospital.ViewModel
             Description = model.Description;
             Doctor = model.Doctor;
             Patient = model.Patient;
-            MedecineNames = model.MedecineNames;
-            LabReports = model.LabReports;
+            PrescribeMedecines = model.PrescribeMedecines;
+            PrescribeLabReports = model.PrescribeLabReports;
 
 
         }
@@ -43,8 +55,8 @@ namespace Hospital.ViewModel
                 Description = model.Description,
                 Doctor = model.Doctor,
                 Patient = model.Patient,
-                MedecineNames = model.MedecineNames,
-                LabReports = model.LabReports
+                PrescribeMedecines = model.PrescribeMedecines,
+                PrescribeLabReports = model.PrescribeLabReports
 
 
 

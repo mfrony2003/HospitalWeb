@@ -18,7 +18,7 @@ namespace Hospital.Repositories
         public DbSet<Room> Room { get; set; }
         public DbSet<LabReport> LabReports { get; set; }
         public DbSet<LabReportCategory> LabReportCategory { get; set; }
-        public DbSet<MedecineInfo> MedecineInfos { get; set; }
+        public DbSet<Medecine> Medecines { get; set; }
 
         public DbSet<Prescription> Prescription { get; set; }
         public DbSet<Appointment> Appointment { get; set; }

@@ -14,6 +14,7 @@ namespace Hospital.ViewModel
         public string Name { get; set; }
         public float Price { get; set; }
 
+        public int LabReportCategoryId { get; set; }
         public LabReportCategory LabReportCategory { get; set; }
         public IEnumerable<LabReportCategory> AllLabReportCategory { get; set; }
 

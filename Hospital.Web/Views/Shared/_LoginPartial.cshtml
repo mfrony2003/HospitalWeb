@@ -5,25 +5,45 @@
 
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
-        
+
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
                 @if (SignInManager.IsSignedIn(User))
                 {
-                    @if (SignInManager.IsSignedIn(User))
+
+                    @if (User.IsInRole("Doctor"))
                     {
-                       @if(User.IsInRole("Doctor"))
-                       {
                         <li class="nav-item">
                             <a class="nav-link " asp-area="Admin" asp-controller="Appointment" asp-action="List">My Appointments</a>
                         </li>
-                       }
                     }
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="Admin" asp-controller="LabReportCategory" asp-action="Index"> + LabReport Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="Admin" asp-controller="MedecineCategory" asp-action="Index"> + Medecine Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="Admin" asp-controller="LabReport" asp-action="Index"> + LabReport</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="Admin" asp-controller="Medecine" asp-action="Index"> + Medecine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="Admin" asp-controller="UserController" asp-action="AllDoctor"> View All Doctor</a>
+                        </li>
+                    }
+
+
+
                     <li class="nav-item">
                         <a id="manage" class="nav-link " asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
                     </li>
                     <li class="nav-item">
-                        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Hospital", new { area = "Admin" })">
+
                             <button id="logout" type="submit" class="nav-link btn btn-link  border-0">Logout</button>
                         </form>
                     </li>

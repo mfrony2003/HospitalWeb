@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Hospital.Repositories.Migrations
 {
     /// <inheritdoc />
-    public partial class initail : Migration
+    public partial class changesLabReports1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -348,7 +348,7 @@ namespace Hospital.Repositories.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "MedecineInfos",
+                name: "Medecines",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -360,15 +360,15 @@ namespace Hospital.Repositories.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MedecineInfos", x => x.Id);
+                    table.PrimaryKey("PK_Medecines", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_MedecineInfos_MedecineCategory_MedecineCategoryId",
+                        name: "FK_Medecines_MedecineCategory_MedecineCategoryId",
                         column: x => x.MedecineCategoryId,
                         principalTable: "MedecineCategory",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_MedecineInfos_Prescription_PrescriptionId",
+                        name: "FK_Medecines_Prescription_PrescriptionId",
                         column: x => x.PrescriptionId,
                         principalTable: "Prescription",
                         principalColumn: "Id");
@@ -444,13 +444,13 @@ namespace Hospital.Repositories.Migrations
                 column: "PrescriptionId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_MedecineInfos_MedecineCategoryId",
-                table: "MedecineInfos",
+                name: "IX_Medecines_MedecineCategoryId",
+                table: "Medecines",
                 column: "MedecineCategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_MedecineInfos_PrescriptionId",
-                table: "MedecineInfos",
+                name: "IX_Medecines_PrescriptionId",
+                table: "Medecines",
                 column: "PrescriptionId");
 
             migrationBuilder.CreateIndex(
@@ -497,7 +497,7 @@ namespace Hospital.Repositories.Migrations
                 name: "LabReports");
 
             migrationBuilder.DropTable(
-                name: "MedecineInfos");
+                name: "Medecines");
 
             migrationBuilder.DropTable(
                 name: "Room");

@@ -54,6 +54,39 @@ namespace Hospital.Services.Service
             };
             return result;
         }
+        public IEnumerable<LabReportCategory> GetAll()
+        {
+            IEnumerable<LabReportCategory> modelList;
+
+            try
+            {
+
+                modelList = _unitOfWork.GenericRepository<LabReportCategory>().GetAll();
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return modelList;
+        }
+        public LabReportCategory GetLabReportCategoryModelById(int Id)
+        {
+            LabReportCategory model;
+
+            try
+            {
+
+                model = _unitOfWork.GenericRepository<LabReportCategory>().GetById(Id);
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return model;
+        }
+
         private List<LabReportCategoryViewModel> ConvertModelToVieModelList(List<LabReportCategory> modelList)
         {
             return modelList.Select(x => new LabReportCategoryViewModel(x)).ToList();
